@@ -1,4 +1,4 @@
-// src/App.tsx
+// frontend/src/App.tsx
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MainLayout from "./layouts/MainLayout";
 import CVBuilder from "./pages/CVBuilder";

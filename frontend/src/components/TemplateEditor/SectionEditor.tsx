@@ -1,4 +1,4 @@
-// src/components/TemplateEditor/SectionEditor.tsx
+// frontend/src/components/TemplateEditor/SectionEditor.tsx
 import { useState } from "react";
 import {
   Box,
@@ -13,7 +13,11 @@ import {
   Divider,
 } from "@mantine/core";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
-import { IconGripVertical, IconPlus, IconTrash } from "react-icons/hi";
+import {
+  HiOutlineMenuAlt2 as IconGripVertical,
+  HiOutlinePlus as IconPlus,
+  HiOutlineTrash as IconTrash
+} from "react-icons/hi";
 
 interface Section {
   id: string;
@@ -21,6 +25,7 @@ interface Section {
   enabled: boolean;
   order: number;
   customFields?: any;
+  custom?: boolean;
 }
 
 interface SectionEditorProps {
@@ -32,7 +37,7 @@ const SectionEditor = ({ sections, onChange }: SectionEditorProps) => {
   const [showAddSection, setShowAddSection] = useState(false);
   const [newSectionName, setNewSectionName] = useState("");
 
-  const handleDragEnd = (result) => {
+  const handleDragEnd = (result: any) => {
     if (!result.destination) return;
 
     const items = Array.from(sections);
@@ -48,7 +53,7 @@ const SectionEditor = ({ sections, onChange }: SectionEditorProps) => {
     onChange(updatedItems);
   };
 
-  const handleToggleSection = (id) => {
+  const handleToggleSection = (id: string) => {
     const updatedSections = sections.map((section) =>
       section.id === id ? { ...section, enabled: !section.enabled } : section
     );
@@ -72,7 +77,7 @@ const SectionEditor = ({ sections, onChange }: SectionEditorProps) => {
     setShowAddSection(false);
   };
 
-  const handleDeleteSection = (id) => {
+  const handleDeleteSection = (id: string) => {
     // Only allow deletion of custom sections
     const sectionToDelete = sections.find((section) => section.id === id);
     if (!sectionToDelete?.custom) return;

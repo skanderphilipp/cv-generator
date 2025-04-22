@@ -10,14 +10,10 @@ import {
   ThemeIcon,
 } from "@mantine/core";
 import { Link } from "react-router-dom";
-import {
-  IconDocument,
-  IconTemplate,
-  IconMagic,
-  IconPrinter,
-  IconBrandAmazon,
-  IconDeviceFloppy,
-} from "react-icons/hi";
+import { LuPrinter, LuHouse } from "react-icons/lu";
+import { RiAmazonFill } from "react-icons/ri";
+import { RxFile, RxMagicWand } from "react-icons/rx";
+import React from "react";
 
 const HomePage = () => {
   return (
@@ -37,7 +33,7 @@ const HomePage = () => {
             component={Link}
             to="/cv-builder"
             size="lg"
-            leftIcon={<IconDocument size={18} />}
+            leftIcon={<RxFile size={18} />}
           >
             Start Building
           </Button>
@@ -46,7 +42,7 @@ const HomePage = () => {
             to="/templates"
             variant="outline"
             size="lg"
-            leftIcon={<IconTemplate size={18} />}
+            leftIcon={<LuHouse size={18} />}
           >
             Browse Templates
           </Button>
@@ -64,7 +60,7 @@ const HomePage = () => {
       >
         <Paper withBorder p="lg" radius="md">
           <ThemeIcon size="xl" radius="md" variant="light" color="blue" mb="md">
-            <IconMagic size={24} />
+            <RxMagicWand size={24} />
           </ThemeIcon>
           <Title order={3} mb="xs">
             AI Selection
@@ -83,7 +79,7 @@ const HomePage = () => {
             color="green"
             mb="md"
           >
-            <IconTemplate size={24} />
+            <LuHouse size={24} />
           </ThemeIcon>
           <Title order={3} mb="xs">
             Custom Templates
@@ -102,7 +98,7 @@ const HomePage = () => {
             color="violet"
             mb="md"
           >
-            <IconPrinter size={24} />
+            <LuPrinter size={24} />
           </ThemeIcon>
           <Title order={3} mb="xs">
             High-Quality PDFs
@@ -172,7 +168,7 @@ const HomePage = () => {
             }}
           >
             <ThemeIcon size={80} radius={40} mb="md">
-              <IconDeviceFloppy size={40} />
+              <LuHouse size={40} />
             </ThemeIcon>
             <Title order={3} mb="xs">
               Ready to get started?

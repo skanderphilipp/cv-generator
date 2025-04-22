@@ -1,5 +1,5 @@
 // src/pages/TemplateManagement.tsx
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import {
   Container,
   Title,
@@ -16,14 +16,14 @@ import {
   SimpleGrid,
 } from "@mantine/core";
 import {
-  IconPlus,
-  IconDotsVertical,
-  IconEdit,
-  IconTrash,
-  IconCopy,
-  IconDownload,
-  IconUpload,
-} from "react-icons/hi";
+  RxTrash,
+  RxDownload,
+  RxCopy,
+  RxPencil1,
+  RxDotsVertical,
+  RxUpload,
+  RxPlus,
+} from "react-icons/rx";
 import TemplateEditor from "../components/TemplateEditor/TemplateEditor";
 import TemplateManager from "../services/template/TemplateManager";
 
@@ -134,13 +134,13 @@ const TemplateManagement = () => {
         <Group>
           <Button
             variant="outline"
-            leftIcon={<IconUpload size={16} />}
+            leftIcon={<RxUpload size={16} />}
             onClick={() => setShowImportModal(true)}
           >
             Import Template
           </Button>
           <Button
-            leftIcon={<IconPlus size={16} />}
+            leftIcon={<RxPlus size={16} />}
             onClick={handleCreateTemplate}
           >
             Create Template
@@ -166,33 +166,33 @@ const TemplateManagement = () => {
                 <Menu position="bottom-end" withinPortal>
                   <Menu.Target>
                     <ActionIcon>
-                      <IconDotsVertical size={16} />
+                      <RxDotsVertical size={16} />
                     </ActionIcon>
                   </Menu.Target>
                   <Menu.Dropdown>
                     {template.type !== "built-in" && (
                       <Menu.Item
-                        icon={<IconEdit size={16} />}
+                        icon={<RxPencil1 size={16} />}
                         onClick={() => handleEditTemplate(template)}
                       >
                         Edit
                       </Menu.Item>
                     )}
                     <Menu.Item
-                      icon={<IconCopy size={16} />}
+                      icon={<RxCopy size={16} />}
                       onClick={() => handleCloneTemplate(template)}
                     >
                       Duplicate
                     </Menu.Item>
                     <Menu.Item
-                      icon={<IconDownload size={16} />}
+                      icon={<RxDownload size={16} />}
                       onClick={() => handleExportTemplate(template)}
                     >
                       Export
                     </Menu.Item>
                     {template.type !== "built-in" && (
                       <Menu.Item
-                        icon={<IconTrash size={16} />}
+                        icon={<RxTrash size={16} />}
                         color="red"
                         onClick={() => handleDeleteClick(template)}
                       >
