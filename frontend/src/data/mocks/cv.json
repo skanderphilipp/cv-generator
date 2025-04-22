@@ -1,0 +1,154 @@
+{
+  "id": "cand-001",
+  "personalInfo": {
+    "firstName": "Alex",
+    "lastName": "Morgan",
+    "title": "Senior Software Engineer",
+    "email": "alex.morgan@example.com",
+    "phone": "+1 (555) 123-4567",
+    "location": "San Francisco, CA",
+    "summary": "Experienced software engineer with 8+ years specializing in frontend development and cloud architecture. Passionate about creating scalable, user-friendly applications with modern technologies."
+  },
+  "skills": [
+    { "id": "skill-1", "name": "JavaScript", "level": 95, "category": "Programming" },
+    { "id": "skill-2", "name": "React", "level": 90, "category": "Frontend" },
+    { "id": "skill-3", "name": "TypeScript", "level": 85, "category": "Programming" },
+    { "id": "skill-4", "name": "Node.js", "level": 80, "category": "Backend" },
+    { "id": "skill-5", "name": "AWS", "level": 75, "category": "Cloud" },
+    { "id": "skill-6", "name": "GraphQL", "level": 70, "category": "API" },
+    { "id": "skill-7", "name": "Docker", "level": 65, "category": "DevOps" },
+    { "id": "skill-8", "name": "Kubernetes", "level": 60, "category": "DevOps" },
+    { "id": "skill-9", "name": "MongoDB", "level": 75, "category": "Database" },
+    { "id": "skill-10", "name": "PostgreSQL", "level": 70, "category": "Database" }
+  ],
+  "experience": [
+    {
+      "id": "exp-1",
+      "role": "Senior Frontend Engineer",
+      "company": "TechCorp Inc.",
+      "location": "San Francisco, CA",
+      "startDate": "2020-03",
+      "endDate": null,
+      "current": true,
+      "description": "Lead frontend development for enterprise SaaS platform with React and TypeScript.",
+      "achievements": [
+        "Reduced bundle size by 45% through code splitting and lazy loading",
+        "Implemented CI/CD pipeline reducing deployment time by 70%",
+        "Mentored junior developers and established frontend best practices"
+      ]
+    },
+    {
+      "id": "exp-2",
+      "role": "Full Stack Developer",
+      "company": "InnoSoft Solutions",
+      "location": "Boston, MA",
+      "startDate": "2017-06",
+      "endDate": "2020-02",
+      "current": false,
+      "description": "Developed web applications using React, Node.js and MongoDB.",
+      "achievements": [
+        "Built real-time dashboard using WebSockets reducing data latency by 90%",
+        "Integrated payment processing system handling M in monthly transactions",
+        "Optimized database queries resulting in 60% faster page loads"
+      ]
+    },
+    {
+      "id": "exp-3",
+      "role": "Junior Developer",
+      "company": "WebStart Agency",
+      "location": "Chicago, IL",
+      "startDate": "2015-01",
+      "endDate": "2017-05",
+      "current": false,
+      "description": "Developed websites and web applications for various clients.",
+      "achievements": [
+        "Created responsive designs for 20+ client websites",
+        "Implemented SEO best practices improving client search rankings by 35%",
+        "Developed custom WordPress plugins for e-commerce functionality"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "id": "edu-1",
+      "degree": "Master of Science in Computer Science",
+      "institution": "Stanford University",
+      "location": "Stanford, CA",
+      "startDate": "2013-09",
+      "endDate": "2015-06",
+      "description": "Focus on distributed systems and machine learning",
+      "achievements": [
+        "GPA: 3.9/4.0",
+        "Teaching Assistant for Algorithms course",
+        "Research project on distributed database systems"
+      ]
+    },
+    {
+      "id": "edu-2",
+      "degree": "Bachelor of Science in Computer Engineering",
+      "institution": "University of Illinois",
+      "location": "Urbana-Champaign, IL",
+      "startDate": "2009-09",
+      "endDate": "2013-05",
+      "description": "Computer engineering with minor in mathematics",
+      "achievements": [
+        "Dean's List all semesters",
+        "Senior project: IoT home automation system",
+        "Vice President of ACM student chapter"
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "id": "cert-1",
+      "name": "AWS Certified Solutions Architect",
+      "issuer": "Amazon Web Services",
+      "date": "2021-05",
+      "expires": "2024-05",
+      "credentialId": "AWS-CSA-123456"
+    },
+    {
+      "id": "cert-2",
+      "name": "Professional Scrum Master I",
+      "issuer": "Scrum.org",
+      "date": "2020-11",
+      "expires": null,
+      "credentialId": "PSM-I-87654321"
+    }
+  ],
+  "languages": [
+    { "id": "lang-1", "name": "English", "proficiency": "Native" },
+    { "id": "lang-2", "name": "Spanish", "proficiency": "Fluent" },
+    { "id": "lang-3", "name": "French", "proficiency": "Intermediate" }
+  ],
+  "projects": [
+    {
+      "id": "proj-1",
+      "name": "E-commerce Platform",
+      "role": "Lead Developer",
+      "startDate": "2021-06",
+      "endDate": "2022-01",
+      "description": "Built scalable e-commerce platform with React, Node.js and MongoDB",
+      "achievements": [
+        "Implemented cart and checkout system with Stripe integration",
+        "Built admin dashboard for inventory management",
+        "Optimized for mobile with responsive design"
+      ],
+      "technologies": ["React", "Node.js", "MongoDB", "Stripe", "AWS"]
+    },
+    {
+      "id": "proj-2",
+      "name": "Health Monitoring App",
+      "role": "Frontend Developer",
+      "startDate": "2019-03",
+      "endDate": "2019-09",
+      "description": "Developed mobile app for health monitoring using React Native",
+      "achievements": [
+        "Implemented real-time data visualization with D3.js",
+        "Built offline mode with local storage sync",
+        "Integrated with health devices via Bluetooth"
+      ],
+      "technologies": ["React Native", "Redux", "D3.js", "Firebase"]
+    }
+  ]
+}
